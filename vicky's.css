@@ -166,7 +166,7 @@ line-height: 1;
 }
 .home-content h3{
   margin: 1rem 0;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 .home-content p{
   font-size: 1.5rem;
@@ -232,21 +232,21 @@ line-height: 1;
 .about-img img{
   float: top;
   border: none;
-  height: 340px;
-  width: 43vh;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   cursor: pointer;
   margin-right: 20px;
 }
 
 .about-img{
-  width: 43vh;
+  width: 300px;
   float: left;
   border-radius: 50%;
    transition: 0.4s ease-in-out;
 }
 .about-img img:hover{
-  box-shadow: 0 0 125px;
+  box-shadow: 0 0 100px;
 }
 .about-content h2{
   margin-top: 15px;
@@ -342,7 +342,7 @@ line-height: 1;
 
 .projects p{
  text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   align-items: center;
  margin-bottom: 26px;
   line-height: normal;
@@ -534,8 +534,9 @@ display: flex;
     font-size: 1.3rem;
   }
   .home-content h1,
+  .about-content h2,
   .home-content h3 {
-    font-size: 1rem;
+    font-size: 2.5rem;
   }
   p,
   .about-content h3,
@@ -546,6 +547,7 @@ display: flex;
   }
 
 }
+
 
 
 
