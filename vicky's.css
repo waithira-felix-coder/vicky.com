@@ -45,12 +45,21 @@ body{
   align-items: left;
   border-radius: 50%;
 }
-.menu-icon{
+/*.menu-icon{
 font-size: 2.5rem;
 color: var(--main-color);
 display: none;
-}
+}*/
 
+/* Hamburger - hidden by default */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: auto;
+}
 
 .logo{
   margin-top: 20px;
@@ -72,6 +81,7 @@ display: none;
   background-clip: text;
   text-shadow: #ff5a02;
   color:transparent ;
+  
 }
 
 .nav{
@@ -82,11 +92,17 @@ display: none;
   margin: auto;
   color: white;
 }
+/* Navigation bar */
+.navbar {
+  display: flex;
+  gap: 1rem;
+}
 .navbar a{
-  float: left;
-  font-size: 1.8rem;
+  /*float: left;*/
+  text-decoration: none;
+  font-size: 1.1rem;
   color: var(--text-color);
-  margin-left: 4rem;
+  /*margin-left: 4rem;*/
   transition: 0.3s  ease-in-out;
   word-spacing: normal;
 
@@ -266,14 +282,18 @@ line-height: 1;
   background-color: var(--bg-color);
 }
 .projects-box{
-  display: grid;
+  /*display: grid;
    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
    place-items: center;
    gap: 7.5rem;
-   row-gap: 3.5rem;
+   row-gap: 3.5rem;*/
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
 }
 .projects-card{
-   height: 510px;
+  /* height: 510px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -286,20 +306,37 @@ line-height: 1;
   padding: 2rem 2rem;
   cursor: pointer;
   box-shadow: 0 0 5px var(--main-color);
-  transition: 0.3s ease;
+  transition: 0.3s ease;*/
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px var(--main-color);
+  width: 220px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .projects-card:hover{
-  box-shadow: 0 0 25px var(--main-color);
+  box-shadow: 0 0 9px var(--main-color);
 }
 .projects-card img{
-  max-width: 300px;
+  /*max-width: 300px;
   place-items: top;
   border-radius: 80%;
-  object-fit: cover;
+  object-fit: cover;*/
+   width: 100%;
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
 }
 
-.project-card h3{
+/*.project-card h3{
   font-size: 2rem;
+}*/
+.projects-card h3, .projects-card h4 {
+  font-size: 1.1rem;
+  margin: 10px 0;
 }
 
 .projects p{
@@ -506,3 +543,4 @@ display: flex;
   }
 
 }
+
