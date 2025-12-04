@@ -5,18 +5,23 @@
    The best shoe dealer of all time/@vicky's vogue shoe @ shoe collection Githurai Kenya">
   <title>Vicky's Foot Wear</title>
   <link rel="stylesheet" href="vicky's.css">
+      <!-- Boxicons for Hamburger Menu -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
  <body>
     <header class="header">
-      <div class="imageflyer">
-      <img class="imageflyer" src="photos/background flyer.png" download alt="Campanys logo" ></div>
+      <!--<div class="imageflyer">
+      <img class="imageflyer" src="photos/background flyer.png" download alt="Campanys logo" ></div>-->
      <a href="#home" class="logo">
        <span class="span">Vicky's</span>Vogue<br>Shoes 👡
       </a>
-
-    <a class=" bx bx-menu" id="menu-icon"></a>
-   <div class="navbar">
-      <nav>
+<!-- Hamburger Menu: only visible on mobile-->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation">
+      <i class='bx bx-menu'></i>
+    </button>
+   <!-- <a class=" bx bx-menu" id="menu-icon"></a>
+   <div class="navbar">-->
+     <nav class="navbar" id="navbar">
        <a href="#home">Home</a>
        <a href="#about">About</a>
        <a href="#projects">Gallery</a>
@@ -410,5 +415,15 @@
 
           </ul>
 </footer>
+     <!-- JavaScript for hamburger menu -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+
+    menuToggle.addEventListener('click', function () {
+      navbar.classList.toggle('active');
+    });
+  </script>  
 </body>
 </html>
+
